@@ -53,6 +53,7 @@ func main() {
 			Subject:         row[6],
 			Text:            row[7],
 			Attach:          strings.Split(row[8], " "),
+			NeedRecipt: 	 row[9],
 		}
 
 		r := email.Recipient{
